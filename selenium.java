@@ -17,7 +17,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class selenium {
 		public static void main(String[] args) throws InterruptedException {
 			
-			WebDriver driver= new ChromeDriver();
+		WebDriver driver= new ChromeDriver();
 			//WebDriverWait wait=new WebDriverWait(driver, 20);
 	        JavascriptExecutor js = (JavascriptExecutor) driver;
 	        driver.get("http://www.automationpractice.pl/index.php");
@@ -31,8 +31,7 @@ public class selenium {
 	        
 		
 			
-			//Thread.sleep(2000);
-			
+						
 			
 			
 			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a"))).click();
